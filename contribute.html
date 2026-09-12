@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contribute learning materials or partner with AESI to support students and elevate academic excellence.">
+  <title>Contribute AESI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="AESI home">
+        <img src="images/logo.jpg" alt="AESI Logo" class="logo">
+        <div>
+          <span class="brand-name">AESI</span>
+          <small>Academic Excellence Support Initiative</small>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="support.html" class="active">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="support.html" class="nav-cta">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container page-banner-inner reveal">
+        <span class="eyebrow light">Give resources</span>
+        <h1>Contribute books & learning materials</h1>
+        <p>Your contribution helps students access the tools and support they need to succeed.</p>
+      </div>
+    </section>
+
+    <section class="section contribution-section reveal">
+      <div class="container contribution-grid">
+        <div class="form-shell">
+          <h3>Contribute resources</h3>
+          <form id="resourcesForm" class="modern-form" method="POST" action="https://formsubmit.co/joshuakayode134@gmail.com">
+            <input type="hidden" name="_next" value="thankyou.html?form=resources">
+
+            <label for="donorName">Full Name</label>
+            <input type="text" id="donorName" name="donorName" placeholder="Your full name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="resourceType">Type of resource</label>
+            <select id="resourceType" name="resourceType" required>
+              <option value="">Select</option>
+              <option value="books">Books</option>
+              <option value="stationery">Stationery</option>
+              <option value="digital">Digital resources</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="quantity">Quantity / description</label>
+            <input type="text" id="quantity" name="quantity" placeholder="Number of books, items, etc." required>
+
+            <div id="digitalUploadField" hidden>
+              <label for="digitalResource">Upload digital resource</label>
+              <input type="file" id="digitalResource" name="digitalResource" accept=".pdf,.doc,.docx,.ppt,.pptx,.zip,.epub,.png,.jpg,.jpeg">
+            </div>
+
+            <label for="message">Message / notes</label>
+            <textarea id="message" name="message" placeholder="Any additional information"></textarea>
+
+            <button type="submit" class="btn primary">Submit resources</button>
+          </form>
+        </div>
+
+        <div class="form-shell alt-shell">
+          <h3>Become a sponsor or partner</h3>
+          <form id="sponsorForm" class="modern-form" method="POST" action="https://formsubmit.co/joshuakayode134@gmail.com">
+            <input type="hidden" name="_next" value="thankyou.html?form=sponsor">
+
+            <label for="companyName">Company / organization name</label>
+            <input type="text" id="companyName" name="companyName" placeholder="Organization name" required>
+
+            <label for="contactPerson">Contact person</label>
+            <input type="text" id="contactPerson" name="contactPerson" placeholder="Full name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+            <label for="emailSponsor">Email</label>
+            <input type="email" id="emailSponsor" name="emailSponsor" placeholder="you@example.com" required>
+
+            <label for="sponsorshipType">Type of sponsorship / partnership</label>
+            <select id="sponsorshipType" name="sponsorshipType" required>
+              <option value="">Select</option>
+              <option value="financial">Financial support</option>
+              <option value="resources">Resources / materials</option>
+              <option value="mentorship">Mentorship programs</option>
+              <option value="event-support">Event support</option>
+            </select>
+
+            <label for="notes">Additional notes / proposal</label>
+            <textarea id="notes" name="notes" placeholder="Any additional information"></textarea>
+
+            <button type="submit" class="btn primary">Submit proposal</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section reveal">
+      <div class="container cta-box">
+        <div>
+          <span class="eyebrow light">Every contribution counts</span>
+          <h2>Your support makes excellence possible.</h2>
+        </div>
+        <a href="donate.html" class="cta-button">Support AESI today</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="contact-details reveal">
+        <h3>Contact AESI</h3>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@aesi.org">info@aesi.org</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+2349034822655">+234 903 482 2655</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Ado-Ekiti, Nigeria</p>
+      </div>
+
+      <div class="footer-links reveal">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social reveal">
+        <h3>Follow us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear">2026</span> Academic Excellence Support Initiative (AESI)</p>
+      <p>Built by KJV Tech</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

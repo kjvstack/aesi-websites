@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for your support and interest in AESI.">
+  <title>Thank You | AESI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="AESI home">
+        <img src="images/logo.jpg" alt="AESI Logo" class="logo">
+        <div>
+          <span class="brand-name">AESI</span>
+          <small>Academic Excellence Support Initiative</small>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="support.html" class="nav-cta">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="thankyou-section">
+      <div class="thankyou-card reveal">
+        <i class="fas fa-check-circle"></i>
+        <h1 id="thankTitle">Thank You!</h1>
+        <p id="thankMessage">Your submission has been received successfully.</p>
+        <a href="index.html" class="btn primary">Return to Homepage</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="contact-details reveal">
+        <h3>Contact AESI</h3>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@aesi.org">info@aesi.org</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+2349034822655">+234 903 482 2655</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Ado-Ekiti, Nigeria</p>
+      </div>
+
+      <div class="footer-links reveal">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social reveal">
+        <h3>Follow us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear">2026</span> Academic Excellence Support Initiative (AESI)</p>
+      <p>Built by KJV Tech</p>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const formType = params.get("form");
+
+    const title = document.getElementById("thankTitle");
+    const message = document.getElementById("thankMessage");
+
+    if (formType === "contact") {
+      title.innerText = "Message Sent!";
+      message.innerText = "Thank you for contacting AESI. Our team will get back to you soon.";
+    } else if (formType === "donate") {
+      title.innerText = "Donation Commitment Received!";
+      message.innerText = "Thank you for supporting AESI. Your generosity helps students achieve academic excellence.";
+    } else if (formType === "volunteer") {
+      title.innerText = "Welcome Volunteer!";
+      message.innerText = "Thank you for volunteering with AESI. Our team will reach out with next steps.";
+    } else if (formType === "resources") {
+      title.innerText = "Resource Contribution Received!";
+      message.innerText = "Thank you for contributing educational resources to AESI.";
+    } else if (formType === "sponsor") {
+      title.innerText = "Partnership Request Received!";
+      message.innerText = "Thank you for your interest in partnering with AESI. Our team will contact you soon.";
+    }
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
